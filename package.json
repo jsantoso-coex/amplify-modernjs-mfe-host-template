@@ -15,31 +15,29 @@
   "engines": {
     "node": ">=16.18.1"
   },
-  "lint-staged": {
-    "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
-      "biome check --files-ignore-unknown=true"
-    ]
-  },
-  "simple-git-hooks": {
-    "pre-commit": "npx lint-staged"
-  },
   "dependencies": {
     "@modern-js/runtime": "2.65.3",
+    "aws-amplify": "^6.13.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@aws-amplify/backend": "^1.14.2",
+    "@aws-amplify/backend-cli": "^1.4.12",
+    "@biomejs/biome": "1.9.4",
     "@modern-js/app-tools": "2.65.3",
     "@modern-js/tsconfig": "2.65.3",
-    "@biomejs/biome": "1.9.4",
-    "typescript": "~5.7.3",
     "@types/jest": "~29.2.4",
     "@types/node": "~18.11.9",
     "@types/react": "^18.3.11",
     "@types/react-dom": "~18.3.1",
-    "lint-staged": "~15.4.0",
-    "simple-git-hooks": "^2.11.1",
-    "rimraf": "^6.0.1"
+    "aws-cdk": "2.1000.2",
+    "aws-cdk-lib": "2.180.0",
+    "constructs": "^10.0.0",
+    "esbuild": "^0.25.1",
+    "rimraf": "^6.0.1",
+    "tsx": "^4.19.3",
+    "typescript": "~5.7.3"
   },
   "packageManager": "pnpm@8.15.9+sha512.499434c9d8fdd1a2794ebf4552b3b25c0a633abcee5bb15e7b5de90f32f47b513aca98cd5cfd001c31f0db454bc3804edccd578501e4ca293a6816166bbd9f81"
 }
